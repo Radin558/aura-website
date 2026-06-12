@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aura Technologies</title>
+<style>
+:root{
+--bg:#ffffff;
+--text:#111111;
+--muted:#666;
+--border:#e5e5e5;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:Inter,Arial,sans-serif;
+background:var(--bg);
+color:var(--text);
+line-height:1.6;
+}
+header{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(255,255,255,.95);
+backdrop-filter:blur(8px);
+border-bottom:1px solid var(--border);
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+z-index:1000;
+}
+nav a{
+text-decoration:none;
+color:#111;
+margin-left:24px;
+font-weight:600;
+}
+section{padding:110px 8%;}
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+.hero h1{font-size:4.5rem;margin-bottom:15px;}
+.hero p{max-width:700px;color:var(--muted);font-size:1.2rem;}
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:14px 28px;
+background:#111;
+color:#fff;
+text-decoration:none;
+border-radius:8px;
+}
+.title{
+font-size:2.5rem;
+margin-bottom:25px;
+}
+.card{
+border:1px solid var(--border);
+padding:30px;
+border-radius:16px;
+background:#fafafa;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+.step{
+border:1px solid var(--border);
+padding:25px;
+border-radius:16px;
+}
+.challenge{
+background:#111;
+color:white;
+}
+.challenge .card{
+background:#1b1b1b;
+border-color:#333;
+}
+.price{
+font-size:3rem;
+font-weight:bold;
+margin:15px 0;
+}
+footer{
+background:#111;
+color:white;
+padding:50px 8%;
+}
+footer a{
+color:white;
+margin-right:20px;
+text-decoration:none;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h2>AURA</h2>
+<nav>
+<a href="#home">Home</a>
+<a href="#challenge">Focus Challenge</a>
+<a href="#about">About</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<h1>Your phone, on your terms.</h1>
+<p>
+Aura replaces digital noise with minimalist clarity.
+A physical NFC system that helps students lock into focus and build healthier technology habits.
+</p>
+<a class="btn" href="#shop">Get the Starter Kit</a>
+</section>
+
+<section>
+<h2 class="title">The Problem</h2>
+<div class="card">
+<h3>Chaos vs. Clarity</h3>
+<p>
+Modern apps compete for your attention every second. Traditional screen-time tools rely entirely on willpower.
+Aura creates a physical commitment that transforms focus into a deliberate action.
+</p>
+</div>
+</section>
+
+<section>
+<h2 class="title">How It Works</h2>
+<div class="grid">
+<div class="step"><h3>1. Place It</h3><p>Place an Aura tag where you study.</p></div>
+<div class="step"><h3>2. Tap It</h3><p>Tap your phone on the NFC tag.</p></div>
+<div class="step"><h3>3. Lock In</h3><p>Your focus mode activates instantly.</p></div>
+</div>
+</section>
+
+<section id="shop">
+<h2 class="title">Aura Starter Kit</h2>
+<div class="card">
+<div class="price">$15</div>
+<ul>
+<li>3 Aura NFC Tags</li>
+<li>App Access</li>
+<li>Quick Setup Guide</li>
+</ul>
+<a class="btn" href="#">Add to Cart</a>
+</div>
+</section>
+
+<section class="challenge" id="challenge">
+<h2 class="title">Aura Focus Challenge</h2>
+<div class="card">
+<h3>Track 10 Hours of Focus</h3>
+<p>Post your Aura setup with #AuraFocus.</p>
+<p>All participants receive a 15% discount code.</p>
+<p>Grand Prize: Premium Noise-Canceling Headphones.</p>
+</div>
+</section>
+
+<section id="about">
+<h2 class="title">About Aura</h2>
+<div class="card">
+<h3>Mission Statement</h3>
+<p>
+Aura helps students and young professionals build healthier relationships with technology without abandoning modern devices.
+</p>
+<br>
+<h3>Privacy Guarantee</h3>
+<p>
+All focus data remains stored locally. No tracking. No selling data. Complete user privacy.
+</p>
+</div>
+</section>
+
+<footer>
+<p><strong>Aura Technologies</strong></p><br>
+<a href="#">Contact Us</a>
+<a href="#">Shipping & Returns</a>
+<a href="#">Privacy Policy</a>
+<a href="#">Instagram</a>
+<a href="#">TikTok</a>
+</footer>
+
+</body>
+</html>
